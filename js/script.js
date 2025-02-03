@@ -54,7 +54,7 @@ async function getSongs(folder) {
 const playMusic = (track, pause = false) => {
     currentSong.src = `./${currFolder}/${track}`
     if (!pause) {
-        play.src = "pause.svg"
+        play.src = "img/pause.svg"
         currentSong.play()
     }
     document.querySelector(".songinfo").innerHTML = `${decodeURI(track)}`
